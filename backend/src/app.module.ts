@@ -13,7 +13,7 @@ import { APP_INTERCEPTOR } from '@nestjs/core';
       ...mikroOrmConfig,
       scope: Scope.REQUEST,
     }),
-    CacheModule.register({ ttl: 5, max: 100, isGlobal: true }),
+    CacheModule.register({ ttl: 100, max: 100, isGlobal: true }),
     ConfigModule.forRoot(),
     UsersModule,
     AuthModule,
