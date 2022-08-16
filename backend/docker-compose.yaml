@@ -10,7 +10,7 @@ services:
       - "5432:5432"
 
   backend:
-    image: stepan186/kisilya.backend
+    image: stepan186/kisilya
     build:
       dockerfile: Dockerfile
       context: .
