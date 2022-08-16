@@ -4,5 +4,5 @@ COPY package.json package-lock.json ./
 RUN npm ci
 COPY . /var/www/
 RUN npm run build
-EXPOSE 80
+EXPOSE 8000
 ENTRYPOINT npm run start:prod
