@@ -5,7 +5,7 @@ import { LoadStrategy } from '@mikro-orm/core';
 
 const config: Options = {
   type: 'postgresql',
-  host: 'localhost',
+  host: 'db',
   port: 5432,
   user: 'postgres',
   password: 'example',
