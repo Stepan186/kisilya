@@ -1,10 +1,10 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@mikro-orm/nestjs';
-import { UserTag } from './entities/userTag.entity';
 import { EntityRepository } from '@mikro-orm/postgresql';
 import { CreateUserTagDto } from '../tags/dto/create-user-tag.dto';
 import { Tag } from '../tags/entities/tag.entity';
 import { User } from '../users/user.entity';
+import { UserTag } from './entities/user-tag.entity';
 
 @Injectable()
 export class UserTagService {

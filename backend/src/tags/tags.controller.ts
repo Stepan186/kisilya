@@ -24,6 +24,7 @@ import { ApiBearerAuth } from '@nestjs/swagger';
 export class TagsController {
   constructor(private readonly tagsService: TagsService) {}
 
+  @UseInterceptors(CacheInterceptor)
   @UseGuards(AuthGuard)
   @ApiBearerAuth()
   @Get('my')

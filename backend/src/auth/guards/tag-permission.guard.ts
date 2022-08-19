@@ -5,7 +5,6 @@ import {
 } from '@nestjs/common';
 import { AuthService } from '../auth.service';
 import { InjectRepository } from '@mikro-orm/nestjs';
-import { UserTag } from '../../userTags/entities/userTag.entity';
 import { EntityRepository } from '@mikro-orm/postgresql';
 import { Tag } from '../../tags/entities/tag.entity';
 

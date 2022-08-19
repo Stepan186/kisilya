@@ -2,13 +2,13 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@mikro-orm/nestjs';
 import { Tag } from './entities/tag.entity';
 import { CreateTagDto } from './dto/create-tag.dto';
-import { UserTag } from '../userTags/entities/userTag.entity';
 import { User } from '../users/user.entity';
 import { UpdateTagDto } from './dto/update-tag.dto';
 import { EntityRepository } from '@mikro-orm/postgresql';
 import { GetTagDto } from './dto/get-tag.dto';
 import { QueryOrderMap } from '@mikro-orm/core';
 import { ApiMetaResponse, UtilityService } from '../utilities/utility.service';
+import { UserTag } from '../user-tags/entities/user-tag.entity';
 
 @Injectable()
 export class TagsService {

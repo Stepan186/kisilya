@@ -9,7 +9,7 @@ import {
 } from '@mikro-orm/core';
 import { v4 } from 'uuid';
 import { Tag } from '../tags/entities/tag.entity';
-import { UserTag } from '../userTags/entities/userTag.entity';
+import { UserTag } from '../user-tags/entities/user-tag.entity';
 
 @Entity()
 export class User extends BaseEntity<User, 'uuid'> {

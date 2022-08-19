@@ -1,8 +1,8 @@
 import { AuthService } from '../auth.service';
 import { InjectRepository } from '@mikro-orm/nestjs';
 import { EntityRepository } from '@mikro-orm/postgresql';
-import { UserTag } from '../../userTags/entities/userTag.entity';
 import { ExecutionContext, ForbiddenException } from '@nestjs/common';
+import { UserTag } from '../../user-tags/entities/user-tag.entity';
 
 export class UserTagPermissionGuard {
   constructor(

@@ -4,8 +4,8 @@ import { TagsService } from './tags.service';
 import { MikroOrmModule } from '@mikro-orm/nestjs';
 import { Tag } from './entities/tag.entity';
 import { AuthModule } from '../auth/auth.module';
-import { UserTag } from '../userTags/entities/userTag.entity';
 import { UtilityModule } from '../utilities/utility.module';
+import { UserTag } from '../user-tags/entities/user-tag.entity';
 
 @Module({
   imports: [
