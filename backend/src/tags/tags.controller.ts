@@ -56,7 +56,7 @@ export class TagsController {
   @UseGuards(TagPermissionGuard)
   @ApiBearerAuth()
   @Put(':id')
-  async update(@Param() id: number, @Body() dto: UpdateTagDto) {
+  async update(@Param('id') id: number, @Body() dto: UpdateTagDto) {
     return await this.tagsService.updateTag(id, dto);
   }
 

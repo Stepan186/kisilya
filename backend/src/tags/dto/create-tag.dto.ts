@@ -7,7 +7,7 @@ export class CreateTagDto {
   @MaxLength(40)
   name: string;
 
-  @ApiProperty()
+  @ApiProperty({ required: false })
   @IsOptional()
   @IsNumber()
   sortOrder: number;
